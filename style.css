@@ -11,9 +11,10 @@
 body {
     min-height: 100vh;
     max-width: 1400px;
-    background-color: papayawhip; 
+    background-color: #555c4c; 
     margin: 0 auto;
 }
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
@@ -32,8 +33,9 @@ body {
     'header header header' 
     'after1 after2 beforei'
     'aftert aftert beforet'
-    'footer footer footer'
-    ;
+    'footer footer footer';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% 50% 30% 10%;
      }
 
     
@@ -44,7 +46,7 @@ header,
 .aftert, 
 .beforet,
 footer
-{background-color: blueviolet;
+{background-color: whitesmoke;
 padding: 10px;
 border: black;}
 
@@ -57,3 +59,8 @@ header {grid-area: header;}
 .beforet {grid-area: beforet;}
 footer {grid-area: footer;}
 
+footer {
+    background-color: red;
+    text-align: center;
+    
+  }
