@@ -1,165 +1,38 @@
-
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
-/* nav { 
-    display: flexbox; 
-    border: 1px solid;
-
-} */
-body {
-    height: 100vh;
-    width: 1350px;
-    background-color: #555c4c; 
-    margin: 0 auto;
+.responsive {
+    width: 100%;
+    height: auto;
 }
-
-a {
-    margin: 2px;
-    color: black;
-font: bold;
-font-size: large;
-
-}
-
-.buttons {
-    display: flex;
-    justify-content: flex-end;
-    /* align-content: center; */
-    background-color: rgb(123, 132, 107);
-    text-indent: 40px;
-    margin-bottom: 10px;
-    /* width: 1370px; */
-}
-/* .after1 {
-        width: 50px;
-        height: 75px;
-}
-.after2 {
-    width: 50px;
-    height: 75px;
-}
-
-.beforei {
-    width: 50px;
-    height: 75px;
-} */
 .grid {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
-    color: black;
-    /* height: 100vh;
-    width: 100vw; */
-    /* max-width: 100vh; */
-  /* margin: 0; */
-    /* background-color: white; */
-    /* height: 100vh;
-    max-width: 1140px;
-    margin: 10px auto;
-    padding: 10px; */
-
+height: 100vh;
     display: grid;
-    grid-template-areas:
-    'after1 after2 beforei'
-    'aftert aftert beforet'
-    ;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows: 10% 50% 30% 10%; */
-    /* grid-template-rows: 1fr 5fr 3fr 1fr; */
-    gap: 10px
-    ;
-     }
- 
-.after1,
-.after2,
-.beforei,
-.aftert, 
-.beforet
-{background-color: whitesmoke;
-border: black;}
-
-.after1 {grid-area: after1;}
-.after2 {grid-area: after2;}
-.aftert {grid-area: aftert;}
-.beforei{grid-area: beforei;}
-.beforet {grid-area: beforet;}
 
 
-figure img {
-    width: 443.3px;
-    height: 350px;
-    object-fit: contain;
-        
-    }
-figcaption {
-    font-size: 12px;
-    opacity: 70%;
-    text-align: center;
-}
-
-.aftert, .beforet {
-    font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 10px;
-    background-color: rgb(176, 186, 159);
-}
-footer {
-    display: flex;
-    background-color: rgb(182, 177, 177); 
-    text-align: center;
-    border-radius: 5px;
-    color: white;
-    justify-content: space-evenly;
-    /* width: 1370px; */
-    /* margin-right:0px; */
-  }
- .icons a {
-    font-size: 10px;
- } 
-/* mobile view */
-@media only screen and (max-width: 700px) 
-{
-
-    body {
-        margin: 0;
-        display: grid;
-        grid-template-areas:
-        "nav"
-        'after1'
-        'after2'
-        'aftert'
-        'beforei'
-        'beforet'
-        "footer"
-        ;
-        grid-template-columns: 1fr; 
-        /* grid-template-rows: 50% 30%; */
-        /* grid-template-rows: 1fr 5fr 3fr 1fr; */
-        gap: 2px
-        ; 
-        /* grid-template-rows: 4fr 2fr;
-        grid-template-columns: 1fr; */
-        /* gap: 10px; */
-        background-color: rgb(140, 140, 121);
-        max-width: 200px;
-
-    }
-    .after1, .after2, .beforei {
-        max-width: 200px;
-    }
-    figure img {
-        width: 100px;
-        height: 75px;
-        object-fit: contain;
-            
-        }
-        figcaption {
-            /* font-size: 6px;
-            opacity: 70%; */
-            text-align: center;
-        }
 
 }
-  
+.nav{
+    background-color: aqua;
+}
+
+.after1{
+    background-color: coral;
+}
+.after2{
+    background-color: rgb(174, 142, 131);
+}
+.aftert{
+    background-color: rgb(23, 183, 195);
+}
+.beforei{
+    background-color: rgb(108, 177, 88);
+}
+.beforet{
+    background-color: rgb(210, 207, 44);
+}
+.footer{
+    background-color: rgb(196, 130, 192);
+}
