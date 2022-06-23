@@ -1,0 +1,118 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* nav { 
+    display: flexbox; 
+    border: 1px solid;
+
+} */
+body {
+    height: 100vh;
+    width: 1350px;
+    background-color: #555c4c; 
+    margin: 0 auto;
+}
+
+a {
+    margin: 2px;
+}
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    /* align-content: center; */
+    background-color: blueviolet;
+}
+/* .after1 {
+        width: 50px;
+        height: 75px;
+}
+.after2 {
+    width: 50px;
+    height: 75px;
+}
+
+.beforei {
+    width: 50px;
+    height: 75px;
+} */
+.grid {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: black;
+    /* height: 100vh;
+    width: 100vw; */
+    /* max-width: 100vh; */
+  /* margin: 0; */
+    /* background-color: white; */
+    /* height: 100vh;
+    max-width: 1140px;
+    margin: 10px auto;
+    padding: 10px; */
+
+    display: grid;
+    grid-template-areas:
+    'header header header' 
+    'after1 after2 beforei'
+    'aftert aftert beforet'
+    'footer footer footer';
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 10% 50% 30% 10%; */
+    /* grid-template-rows: 1fr 5fr 3fr 1fr; */
+    gap: 10px
+    ;
+     }
+
+    
+header, 
+.after1,
+.after2,
+.beforei,
+.aftert, 
+.beforet,
+footer
+{background-color: whitesmoke;
+border: black;}
+
+
+header {grid-area: header;}
+.after1 {grid-area: after1;}
+.after2 {grid-area: after2;}
+.aftert {grid-area: aftert;}
+.beforei{grid-area: beforei;}
+.beforet {grid-area: beforet;}
+footer {grid-area: footer;}
+
+figure img {
+width: 450px;
+height: 350px;
+object-fit: contain;
+
+}
+footer {
+    background-color: red;
+    text-align: center;
+    border-radius: 5px;
+    
+  }
+/* mobile view */
+@media only screen and (max-width: 700px) {
+
+    body {
+        display: grid;
+        grid-template-rows: 1fr 4fr 3fr 1fr;
+        gap: 10px;
+        background-color: blue;
+        max-width: 200px;
+
+        
+    }
+    .after1, .after2, .beforei {
+        max-width: 200px;
+    }
+
+}
+  

@@ -1,5 +1,5 @@
 
-{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -12,14 +12,26 @@
 } */
 body {
     height: 100vh;
-    width: 100vw;
+    width: 1350px;
     background-color: #555c4c; 
     margin: 0 auto;
 }
+
+a {
+    margin: 2px;
+    color: black;
+font: bold;
+font-size: large;
+
+}
+
 .buttons {
-    display: flexbox;
-    align-content: center;
-    background-color: blueviolet;
+    display: flex;
+    justify-content: flex-end;
+    /* align-content: center; */
+    background-color: rgb(123, 132, 107);
+    text-indent: 50px;
+    margin-bottom: 10px;
 }
 /* .after1 {
         width: 50px;
@@ -50,51 +62,74 @@ body {
 
     display: grid;
     grid-template-areas:
-    'header header header' 
     'after1 after2 beforei'
     'aftert aftert beforet'
-    'footer footer footer';
+    ;
     grid-template-columns: 1fr 1fr 1fr;
     /* grid-template-rows: 10% 50% 30% 10%; */
     /* grid-template-rows: 1fr 5fr 3fr 1fr; */
     gap: 10px
     ;
      }
-
-    
-header, 
+ 
 .after1,
 .after2,
 .beforei,
 .aftert, 
-.beforet,
-footer
+.beforet
 {background-color: whitesmoke;
 border: black;}
 
-
-header {grid-area: header;}
 .after1 {grid-area: after1;}
 .after2 {grid-area: after2;}
 .aftert {grid-area: aftert;}
 .beforei{grid-area: beforei;}
 .beforet {grid-area: beforet;}
-footer {grid-area: footer;}
 
-footer {
-    background-color: red;
+
+figure img {
+    width: 450px;
+    height: 350px;
+    object-fit: contain;
+        
+    }
+figcaption {
+    font-size: 12px;
+    opacity: 70%;
     text-align: center;
-    
+}
+
+.aftert, .beforet {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    background-color: rgb(176, 186, 159);
+}
+footer {
+    background-color: rgb(182, 177, 177); 
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    margin-right: px;
   }
+  /* .fa-facebook {
+    background: #3B5998;
+    color: white;
+  } */
 /* mobile view */
 @media only screen and (max-width: 700px) {
 
-    .grid {
+    body {
         display: grid;
-        grid-template-rows: 1fr 4fr 3fr 1fr;
+        grid-template-rows: 4fr 2fr;
         gap: 10px;
-        background-color: blue;
+        background-color: rgb(140, 140, 121);
+        max-width: 200px;
+
         
     }
+    .after1, .after2, .beforei {
+        max-width: 200px;
+    }
+
 }
   
