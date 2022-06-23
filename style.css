@@ -105,16 +105,16 @@ figcaption {
     background-color: rgb(176, 186, 159);
 }
 footer {
+    display: flex;
     background-color: rgb(182, 177, 177); 
     text-align: center;
     border-radius: 5px;
     color: white;
-    margin-right: px;
+    /* margin-right:0px; */
   }
-  /* .fa-facebook {
-    background: #3B5998;
-    color: white;
-  } */
+ .icons {
+    font-size: 4px;
+ } 
 /* mobile view */
 @media only screen and (max-width: 700px) 
 {
@@ -123,16 +123,18 @@ footer {
         margin: 0;
         display: grid;
         grid-template-areas:
+        "nav"
         'after1'
         'after2'
         'aftert'
         'beforei'
         'beforet'
+        "footer"
         ;
-        /* grid-template-columns: 1f 1fr 1fr;  */
+        grid-template-columns: 1fr; 
         /* grid-template-rows: 50% 30%; */
         /* grid-template-rows: 1fr 5fr 3fr 1fr; */
-        gap: 10px
+        gap: 2px
         ; 
         /* grid-template-rows: 4fr 2fr;
         grid-template-columns: 1fr; */
